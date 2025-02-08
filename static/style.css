@@ -1,0 +1,12 @@
+body {
+    font-family: sans-serif;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+#todo-list li {
+    margin-bottom: 10px;
+}
