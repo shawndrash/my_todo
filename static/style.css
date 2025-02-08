@@ -95,7 +95,51 @@ h1 {
     box-shadow: var(--box-shadow);
 }
 
-#todo-list button {
+.todo-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#todo-list .edit-btn {
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#todo-list .edit-btn:hover {
+    background-color: #357abd;
+}
+
+#todo-list .complete-btn {
+    padding: 0.5rem 1rem;
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#todo-list li:not(.completed) .complete-btn {
+    background-color: #27ae60;
+}
+
+#todo-list li:not(.completed) .complete-btn:hover {
+    background-color: #219a52;
+}
+
+#todo-list li.completed .complete-btn {
+    background-color: #f39c12;
+}
+
+#todo-list li.completed .complete-btn:hover {
+    background-color: #d68910;
+}
+
+#todo-list .delete-btn {
     padding: 0.5rem 1rem;
     background-color: var(--danger-color);
     color: white;
@@ -105,8 +149,23 @@ h1 {
     transition: background-color 0.3s ease;
 }
 
-#todo-list button:hover {
+#todo-list .delete-btn:hover {
     background-color: #c0392b;
+}
+
+#todo-list .todo-text.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+#todo-list .todo-buttons button {
+    text-decoration: none;
+    opacity: 1;
+}
+
+#todo-list .todo-text {
+    flex: 1;
+    margin-right: 1rem;
 }
 
 @media (max-width: 480px) {
