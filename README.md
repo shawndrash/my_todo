@@ -28,7 +28,7 @@
 go run cmd/main.go
 ```
 
-2. 访问 http://localhost:8080
+2. 访问 http://localhost:8080/static/index.html
 
 ## 目录结构
 
