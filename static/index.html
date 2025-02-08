@@ -2,14 +2,18 @@
 <html>
 <head>
     <title>待办事项</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>待办事项</h1>
-    <ul id="todo-list"></ul>
-    <input type="text" id="new-todo-input" placeholder="添加新的待办事项">
-    <button id="add-todo-button">添加</button>
-
+    <div class="container">
+        <h1>我的待办事项</h1>
+        <div class="input-group">
+            <input type="text" id="new-todo-input" placeholder="添加新的待办事项...">
+            <button id="add-todo-button">添加</button>
+        </div>
+        <ul id="todo-list"></ul>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
